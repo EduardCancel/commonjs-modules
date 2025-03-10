@@ -5,7 +5,8 @@ Esporta la funzione dal file.
 
 */
 
-function fullName(firstName, lastName){
+
+/* function fullName(firstName, lastName){
     return {
         firstName : firstName,
         lastName : lastName
@@ -15,4 +16,10 @@ function fullName(firstName, lastName){
 console.log(fullName("Eduard", "Cancel"));
 
 
-module.exports = {fullName}
+module.exports = {fullName} */
+
+const fullName = (firstName, lastName) => ({ firstName, lastName });
+
+console.log(fullName("Eduard", "Cancel"));
+
+module.exports = { fullName };
