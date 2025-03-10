@@ -7,19 +7,14 @@ All'interno della tua funzione, usa le tue due funzioni precedenti per costruire
 
 */
 
-const fullName = require("./name")
-const hobbiesFc = require("./hobbies")
+const { fullName } = require("./name");
+const { hobbiesFc } = require("./hobbies");
 
-
-function complete(){
-    const {firstName, lastName} = fullName("Eduard", "Cancel");
-    const [hobbyOne, hobbyTwo, hobbyThree] = hobbiesFc("Motorcycles", "Gaming", "Work")
+function complete() {
     return {
-        fullName: {firstName, lastName},
-        hobbiesFc: [hobbyOne, hobbyTwo, hobbyThree],
+        fullName: fullName("Eduard", "Cancel"),
+        hobbies: hobbiesFc("Motorcycles", "Gaming", "Work"),
     };
 }
 
-
 console.log(complete());
-
