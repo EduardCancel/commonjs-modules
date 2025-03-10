@@ -5,13 +5,13 @@ Esporta la funzione dal file.
 
 */
 
-function threeParameters(hobbyOne, hobbyTwo, hobbyThree){
-    let param = []
-    param.push(hobbyOne, hobbyTwo, hobbyThree)
-    return param
+function hobbiesFc(hobbyOne, hobbyTwo, hobbyThree){
+    let array = []
+    array.push(hobbyOne, hobbyTwo, hobbyThree)
+    return array
 }
 
-console.log(threeParameters("Motorcycles", "Gaming", "Work"));
+console.log(hobbiesFc("Motorcycles", "Gaming", "Work"));
 
-module.esxports = threeParameters
+module.esxports = {hobbiesFc}
 
