@@ -5,7 +5,8 @@ Esporta la funzione dal file.
 
 */
 
-function hobbiesFc(hobbyOne, hobbyTwo, hobbyThree){
+
+/* function hobbiesFc(hobbyOne, hobbyTwo, hobbyThree){
     let array = []
     array.push(hobbyOne, hobbyTwo, hobbyThree)
     return array
@@ -13,5 +14,12 @@ function hobbiesFc(hobbyOne, hobbyTwo, hobbyThree){
 
 console.log(hobbiesFc("Motorcycles", "Gaming", "Work"));
 
-module.esxports = {hobbiesFc}
+module.exports = {hobbiesFc};
+ */
+
+const hobbiesFc = (hobbyOne, hobbyTwo, hobbyThree) => [hobbyOne, hobbyTwo, hobbyThree];
+
+console.log(hobbiesFc("Motorcycles", "Gaming", "Work"));
+
+module.exports = { hobbiesFc };
 
