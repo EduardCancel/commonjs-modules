@@ -5,10 +5,14 @@ Esporta la funzione dal file.
 
 */
 
-function fullName(firstName, lastName){
-    return firstName + " " + lastName
+function fullName (firstName, lastName){
+    return {
+        firstName : firstName,
+        lastName : lastName
+    };
 }
 
 console.log(fullName("Eduard", "Cancel"));
 
-module.exports = fullName
+
+module.esxports = {fullName}
